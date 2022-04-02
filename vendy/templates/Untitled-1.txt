@@ -1,0 +1,4 @@
+"scripts": {
+  "server": "argo-run serve",
+  "build": "argo-run build",
+},

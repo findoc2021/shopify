@@ -1,0 +1,53 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.git"
+		},
+		{
+			"path": "..\\..\\.github"
+		},
+		{
+			"path": "..\\..\\.vscode"
+		},
+		{
+			"path": "..\\..\\assets"
+		},
+		{
+			"path": "..\\..\\config"
+		},
+		{
+			"path": "..\\..\\layout"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\sections"
+		},
+		{
+			"path": "..\\..\\snippets"
+		},
+		{
+			"path": "..\\..\\templates"
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+		
+			{
+				"type": "rdbg",
+				"name": "Debug current file with rdbg",
+				"request": "launch",
+				"script": "${file}",
+				"args": [],
+				"askParameters": true
+			},
+			{
+				"type": "rdbg",
+				"name": "Attach with rdbg",
+				"request": "attach"
+			}
+		]
+	}
+}

@@ -1,0 +1,32 @@
+<div class="template_contact">
+	<div class="page_heading custom_page_heading">
+		{% if page_title != blank %}
+			<p>{{ page_title }}</p>
+		{% endif %}
+	</div>
+	
+	<div class="container">
+	<div class="row">
+
+		<div class="col-12 col-lg-6">
+			{% section 'template-contact' %}
+		</div>
+		<div class="col-12 col-lg-6">
+			{% section 'template-contact-form' %}
+		</div>
+		
+		<div class="col-12">
+			{% if page.content.size > 0 %}
+				<div class="rte">
+					{{ page.content }}
+				</div>
+			{% endif %}
+		</div>
+
+	</div>
+	</div>
+	{% if settings.contact_map %}
+		{% section 'index-map' %}
+	{% endif %}
+</div>
+
